@@ -43,6 +43,11 @@ This roadmap tracks features and improvements for the BullMQ Workflows engine, w
   - First event to arrive wins
   - Cancel remaining event waiters
 
+## Durable Storage
+
+- [ ] **Durable storage**
+  - Store workflow state in a durable storage solution (e.g. PostgreSQL, MySQL, Cassandra, etc.)
+
 ## Workflow Management
 
 - [ ] **Concurrency limits** (🔗 [CF Docs](https://developers.cloudflare.com/workflows/platform/limits/))

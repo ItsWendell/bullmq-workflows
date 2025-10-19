@@ -1,6 +1,6 @@
 # BullMQ Workflows
 
-> **⚠️ Experimental Release**: This library is in active development. APIs may change between versions.
+> **⚠️ Experimental Release**: This library is experimental, APIs may change between versions. Use at your own risk. Workflow state is persisted in Redis, which is not a durable storage solution and may be lost if misconfigured.
 
 A TypeScript durable workflow engine built on BullMQ and Redis with support for programmatically defined workflows, nested steps, retries, and comprehensive execution control. Inspired by [Cloudflare Workflows](https://developers.cloudflare.com/workflows), it provides a deterministic replay pattern for resilient distributed workflows.
 
