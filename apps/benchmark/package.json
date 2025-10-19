@@ -1,0 +1,24 @@
+{
+  "name": "bullmq-workflows-benchmark",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Performance benchmarks for BullMQ Workflows",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=development bun run index.ts --all",
+    "bench:node": "NODE_ENV=development tsx index.ts --runtime node",
+    "bench:bun": "NODE_ENV=development bun run index.ts --runtime bun",
+    "bench:compare": "NODE_ENV=development bun run index.ts --all --runtimes node,bun",
+    "dev": "NODE_ENV=development bun run index.ts"
+  },
+  "dependencies": {
+    "bullmq": "^5.61.0",
+    "bullmq-workflows": "workspace:*",
+    "ioredis": "^5.8.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2"
+  }
+}

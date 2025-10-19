@@ -1,0 +1,20 @@
+{
+  "name": "workflow-examples",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "basic": "bun run basic-workflow.ts",
+    "nested": "bun run nested-steps.ts",
+    "retries": "bun run workflow-with-retries.ts",
+    "errors": "bun run non-retryable-error.ts"
+  },
+  "dependencies": {
+    "bullmq-workflows": "workspace:*",
+    "bullmq": "^5.61.0",
+    "ioredis": "^5.8.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

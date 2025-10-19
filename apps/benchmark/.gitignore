@@ -1,0 +1,9 @@
+# Benchmark output
+benchmark-results/
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
